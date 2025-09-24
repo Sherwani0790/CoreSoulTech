@@ -1,11 +1,11 @@
 import React from "react";
-
+import Logo from '../assets/img/cst-logo.jpg';
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
       <div className="container">
         <a className="navbar-brand fw-bold text-primary" href="#home">
-          CoreSoulTech
+          <img className="main-logo" src={Logo} alt="CoreSoulTech"/>
         </a>
         <button
           className="navbar-toggler"
