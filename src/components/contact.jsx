@@ -43,13 +43,13 @@ const Contact = () => {
   return (
     <section id="contact" className="py-5 bg-light">
       <div className="container">
-        <h2 className="fw-bold text-primary text-center mb-4">Contact Us</h2>
+        <h2 className="fw-bold text-center mb-4">Contact Us</h2>
         <div className="row justify-content-center">
           <div className="col-md-8">
             <form onSubmit={handleSubmit} noValidate>
               {/* Name */}
               <div className="mb-3">
-                <label className="form-label fw-semibold">Name</label>
+                <label>Name</label>
                 <input
                   type="text"
                   className={`form-control ${errors.name ? "is-invalid" : ""}`}
@@ -64,7 +64,7 @@ const Contact = () => {
 
               {/* Email */}
               <div className="mb-3">
-                <label className="form-label fw-semibold">Email</label>
+                <label>Email</label>
                 <input
                   type="email"
                   className={`form-control ${errors.email ? "is-invalid" : ""}`}
@@ -79,7 +79,7 @@ const Contact = () => {
 
               {/* Message */}
               <div className="mb-3">
-                <label className="form-label fw-semibold">Message</label>
+                <label>Message</label>
                 <textarea
                   className={`form-control ${
                     errors.message ? "is-invalid" : ""
