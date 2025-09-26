@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light shadow-sm position-sticky top-0 w-100">
       <div className="container-fluid">
-        <Link className="navbar-brand fw-bold text-primary" to="/home">
+        <Link className="navbar-brand fw-bold text-primary" to="/">
           <img className="main-logo" src={Logo} alt="CoreSoulTech" />
         </Link>
 
