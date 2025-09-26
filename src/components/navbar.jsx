@@ -1,8 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom"; // ✅ for routing
+import React, { use } from "react";
+import { Link, useNavigate } from "react-router-dom"; // ✅ for routing
 import Logo from "../assets/logo/cst-logo.jpg";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <nav className="navbar navbar-expand-lg navbar-light shadow-sm position-sticky top-0 w-100">
       <div className="container-fluid">
@@ -46,7 +47,7 @@ const Navbar = () => {
           <button
             className="btn btn-primary"
             onClick={() => {
-              window.location.href = "/contact";
+              navigate("/contact");
             }}
           >
             Contact Us
