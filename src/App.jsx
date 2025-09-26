@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import React, { useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Contact from "./pages/contact/contact";
 import Footer from "./components/footer";
-import Hero from "./components/hero";
+import Home from "./pages/home/home";
 import Navbar from "./components/navbar";
-import Services from "./components/services";
-import Contact from "./components/contact";
+import Services from "./pages/services/services";
 
 function App() {
   useEffect(() => {
@@ -19,16 +20,16 @@ function App() {
   return (
     <>
       <Navbar />
-      <div data-aos="fade-up">
-        <Hero />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact />} />
+        {/* <Route path="*" element={<Home />} /> */}
+      </Routes>
+      <div className="position-fixed bottom-0 w-100">
+        <Footer />
       </div>
-      <div data-aos="fade-up">
-        <Services />
-      </div>
-      <div data-aos="fade-up">
-        <Contact />
-      </div>
-      <Footer />
     </>
   );
 }

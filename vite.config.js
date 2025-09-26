@@ -10,5 +10,6 @@ export default defineConfig({
       },
     }),
   ],
-  base: "/CoreSoulTech/", // 👈 Must match your GitHub repo name
+  base: "/", // 👈 Must match your GitHub repo name
+  // base: "/CoreSoulTech/", // 👈 Must match your GitHub repo name
 })

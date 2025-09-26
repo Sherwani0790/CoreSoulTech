@@ -1,11 +1,12 @@
 import React from "react";
-import img1 from "../assets/img/cybersecurity.svg";
-import img2 from "../assets/img/communication.svg";
-import img3 from "../assets/img/concept-design.svg";
-// import img1 from "../assets/cybersecurity.svg";
-const Hero = () => {
+import img1 from "../../assets/img/cybersecurity.svg";
+import img2 from "../../assets/img/communication.svg";
+import img3 from "../../assets/img/concept-design.svg";
+const Home = () => {
   return (
-    <section id="home" className="vh-100 d-flex align-items-center bg-light">
+    <>
+    
+    <section id="home" className="d-flex align-items-center bg-light mt16">
       <div className="container-fluid text-center">
         <div
           id="carouselExampleControls"
@@ -66,7 +67,8 @@ const Hero = () => {
         </div>
       </div>
     </section>
+    
+    </>
   );
 };
-
-export default Hero;
+export default Home;
