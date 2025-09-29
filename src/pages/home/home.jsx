@@ -1,7 +1,7 @@
 import React from "react";
-import img1 from "../../assets/img/cybersecurity.svg";
-import img2 from "../../assets/img/communication.svg";
-import img3 from "../../assets/img/concept-design.svg";
+import img1 from "../../assets/img/slide-1.jpg";
+import img2 from "../../assets/img/slide-2.jpg";
+import img3 from "../../assets/img/slide-3.jpg";
 const Home = () => {
   return (
     <>

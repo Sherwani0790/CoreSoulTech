@@ -412,7 +412,7 @@ select:focus {
   width: 50px;
   height: 50px;
 }
-Footer{
+Footer {
   margin-top: 50px;
   padding: 20px 0;
   background-color: var(--gray-200);
@@ -428,4 +428,50 @@ Footer{
 .contact-card:hover {
   transform: translateY(-8px) scale(1.03);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.team-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.team-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.team-card:hover img {
+  transform: scale(1.1);
+}
+
+.team-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(0 0 0 / 52%);
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s ease;
+  text-align: center;
+  padding: 15px;
+}
+
+.team-card:hover .team-overlay {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .img-fluid.h-800 {
+    height: 100%;
+    object-fit: cover;
+  }
 }
