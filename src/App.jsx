@@ -8,6 +8,7 @@ import Footer from "./components/footer";
 import Home from "./pages/home/home";
 import Navbar from "./components/navbar";
 import Services from "./pages/services/services";
+import About from "./pages/about/about";
 
 function App() {
   useEffect(() => {
@@ -24,7 +25,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
         {/* <Route path="*" element={<Home />} /> */}
       </Routes>
       <div className="position-fixed bottom-0 w-100">

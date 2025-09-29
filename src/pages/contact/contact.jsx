@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -35,7 +36,6 @@ const Contact = () => {
     } else {
       setErrors({});
       alert("✅ Message sent successfully!");
-      // Here you can call an API to send data to backend
       setFormData({ name: "", email: "", message: "" });
     }
   };
@@ -44,8 +44,22 @@ const Contact = () => {
     <section id="contact" className="py-5 bg-light">
       <div className="container">
         <h2 className="fw-bold text-center mb-4">Contact Us</h2>
-        <div className="row justify-content-center">
-          <div className="col-md-8">
+        <div className="row mt-4">
+          {/* Google Map */}
+          <div className="col-md-12 mb-4">
+            <iframe
+              title="Islamabad Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26534.81221038792!2d73.0551!3d33.6844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbf76d5e6e2f7%3A0x2bb36f5c5c0db59d!2sIslamabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1695983210000!5m2!1sen!2s"
+              width="100%"
+              height="350"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+
+          {/* Contact Form */}
+          <div className="col-md-6 col-12 mb-4">
             <form onSubmit={handleSubmit} noValidate>
               {/* Name */}
               <div className="mb-3">
@@ -101,6 +115,32 @@ const Contact = () => {
                 </button>
               </div>
             </form>
+          </div>
+          <div className="col-md-6 col-12">
+            <div className="row">
+              {/* Contact Info Cards */}
+              <div className="col-md-6 col-12 mb-4">
+                <div className="contact-card card shadow-sm  text-center p-3">
+                  <FaEnvelope size={20} className="text-primary mb-2" />
+                  <h5>Email</h5>
+                  <p className="text-muted">coresoultech@outlook.com</p>
+                </div>
+              </div>
+              <div className="col-md-6 col-12 mb-4">
+                <div className="contact-card card shadow-sm  text-center p-3">
+                  <FaPhoneAlt size={20} className="text-success mb-2" />
+                  <h5>Phone</h5>
+                  <p className="text-muted">+92 316 7758740</p>
+                </div>
+              </div>
+              <div className="col-md-6 col-12 mb-4">
+                <div className="contact-card card shadow-sm  text-center p-3">
+                  <FaMapMarkerAlt size={20} className="text-danger mb-2" />
+                  <h5>Address</h5>
+                  <p className="text-muted">Islamabad</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
