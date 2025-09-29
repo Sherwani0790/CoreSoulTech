@@ -19,7 +19,11 @@ const About = () => {
               </p>
             </div>
             <div className="col-md-6 col-12 p-5">
-                <img src={aboutImg} alt="" className="img-fluid border-radius-16"/>
+              <img
+                src={aboutImg}
+                alt=""
+                className="img-fluid border-radius-16"
+              />
             </div>
           </div>
         </div>
