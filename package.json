@@ -3,10 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://sherwani0790.github.io/CoreSoulTech",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -31,8 +34,5 @@
     "gh-pages": "^6.3.0",
     "globals": "^16.4.0",
     "vite": "^7.1.7"
-  },
-  "engines": {
-    "node": ">=18"
   }
 }
