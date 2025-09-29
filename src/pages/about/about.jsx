@@ -1,10 +1,7 @@
 import React from "react";
-import aboutImg from "../../assets/img/communication.svg";
-import team1 from "../../assets/img/team/1.png";
-import team2 from "../../assets/img/team/2.png";
-import team3 from "../../assets/img/team/3.png";
-import team4 from "../../assets/img/team/4.png";
-// import "./About.css"; // custom styles
+import aboutImg from "../../assets/img/about.jpg";
+import team1 from "../../assets/img/team/user.png";
+import team2 from "../../assets/img/team/user-2.png";
 
 const About = () => {
   const team = [
@@ -12,7 +9,7 @@ const About = () => {
       id: 1,
       name: "Aliza Khan",
       designation: "Full Stack Developer",
-      img: team1,
+      img: team2,
     },
     {
       id: 2,
@@ -24,25 +21,25 @@ const About = () => {
       id: 3,
       name: "Usman Malik",
       designation: "Lead Developer",
-      img: team3,
+      img: team1,
     },
     {
       id: 4,
       name: "Ayesha Noor",
       designation: "UI/UX Designer",
-      img: team4,
+      img: team2,
     },
     {
       id: 5,
       name: "Zainab Raza",
       designation: "Documentation Specialist",
-      img: team4,
+      img: team2,
     },
     {
       id: 6,
       name: "Hassan Ali",
       designation: "WordPress Developer",
-      img: team3,
+      img: team1,
     },
   ];
 
@@ -104,7 +101,7 @@ const About = () => {
                   />
                   <div className="team-overlay">
                     <h5>{member.name}</h5>
-                    <p>{member.designation}</p>
+                    <p className="text-white">{member.designation}</p>
                   </div>
                 </div>
               </div>

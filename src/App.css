@@ -412,7 +412,7 @@ select:focus {
   width: 50px;
   height: 50px;
 }
-Footer{
+Footer {
   margin-top: 50px;
   padding: 20px 0;
   background-color: var(--gray-200);
@@ -432,7 +432,7 @@ Footer{
 .team-card {
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 50%;
   cursor: pointer;
 }
 
@@ -453,7 +453,7 @@ Footer{
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgb(0 0 0 / 52%);
   color: #fff;
   opacity: 0;
   display: flex;
