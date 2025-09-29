@@ -468,3 +468,10 @@ Footer {
 .team-card:hover .team-overlay {
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  .img-fluid.h-800 {
+    height: 100%;
+    object-fit: cover;
+  }
+}
